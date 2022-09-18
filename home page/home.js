@@ -11,7 +11,7 @@ let pageTitle                   = document.querySelector(".pageTitle");
 let noAccount                   = document.querySelector(".noAccount");
 let TendingFilms                = [
 {
-    image: "/Aflex/home page/images/film11.jpg",
+    image: "images/film11.jpg",
     name : "Bhaag milkha Bhaag"
 },
 {
