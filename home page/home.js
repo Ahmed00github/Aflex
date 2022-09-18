@@ -11,15 +11,15 @@ let pageTitle                   = document.querySelector(".pageTitle");
 let noAccount                   = document.querySelector(".noAccount");
 let TendingFilms                = [
 {
-    image: "/Aflex/images/film11.jpg",
+    image: "images/film11.jpg",
     name : "Bhaag milkha Bhaag"
 },
 {
-    image: "/Aflex/images/film12.jpg",
+    image: "images/film12.jpg",
     name : "The resorl"
 },
 {
-    image: "/Aflex/images/film13.jpg",
+    image: "images/film13.jpg",
     name : "Fall"
 },
 {
@@ -27,192 +27,192 @@ let TendingFilms                = [
     name : "3mohm"
 },
 {
-    image: "Aflex/home page/images/film15.jpg",
+    image: "images/film15.jpg",
     name : "Lost city"
 },
 {
-    image: "/Aflex/home page/images/film16.jpg",
+    image: "images/film16.jpg",
     name : "Apo sdam"
 },
 {
-    image: "/Aflex/home page/images/film17.jpg",
+    image: "images/film17.jpg",
     name : "seoul vibe"
 },
 ];
 let TendingFilms2                = [
     {
-        image: "Aflex/home page/images/film20.jpg",
+        image: "images/film20.jpg",
         name : "Shark side"
     },
     {
-        image: "Aflex/home page/images/film21.jpg",
+        image: "images/film21.jpg",
         name : "The resorl"
     },
     {
-        image: "Aflex/home page/images/film22.jpg",
+        image: "images/film22.jpg",
         name : "Hidden fox"
     },
     {
-        image: "Aflex/home page/images/film23.jpg",
+        image: "images/film23.jpg",
         name : "Bullet proof"
     },
     {
-        image: "Aflex/home page/images/film32.jpg",
+        image: "images/film32.jpg",
         name : "Eradication"
     },
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
         name : "Glorious"
     },
     {
-        image: "Aflex/home page/images/film26.jpg",
+        image: "images/film26.jpg",
         name : "seoul vibe"
     },
     ];
 let stars_cards                             = [
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
         name : "Glorious"
     },
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
         name : "Glorious"
     },
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
         name : "Glorious"
     },
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
         name : "Glorious"
     },
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
         name : "Glorious"
     },
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
         name : "Glorious"
     },
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
         name : "Glorious"
     },
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
         name : "Glorious"
     },
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
         name : "Glorious"
     },
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
         name : "Glorious"
     },
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
         name : "Glorious"
     },
 ];
 let cards_animation                             =[
     {
-        image: "Aflex/home page/images/film1.jpg",
+        image: "images/film1.jpg",
     },
     {
-        image: "Aflex/home page/images/film2.jpg",
+        image: "images/film2.jpg",
     },
     {
-        image: "Aflex/home page/images/film3.jpg",
+        image: "images/film3.jpg",
     },
     {
-        image: "Aflex/home page/images/film4.jpg",
+        image: "images/film4.jpg",
     },
     {
-        image: "Aflex/home page/images/film5.jpg",
+        image: "images/film5.jpg",
     },
     {
-        image: "Aflex/home page/images/film6.jpg",
+        image: "images/film6.jpg",
     },
     {
-        image: "Aflex/home page/images/film7.jpg",
+        image: "images/film7.jpg",
     },
     {
-        image: "Aflex/home page/images/film8.jpg",
+        image: "images/film8.jpg",
     },
     {
-        image: "Aflex/home page/images/film9.jpg",
+        image: "images/film9.jpg",
     },
     {
-        image: "Aflex/home page/images/film10.jpg",
+        image: "images/film10.jpg",
     },
     {
-        image: "Aflex/home page/images/film11.jpg",
+        image: "images/film11.jpg",
     },
     {
-        image: "Aflex/home page/images/film12.jpg",
+        image: "images/film12.jpg",
     },
     {
-        image: "Aflex/home page/images/film13.jpg",
+        image: "images/film13.jpg",
     },
     {
-        image: "Aflex/home page/images/film14.jpg",
+        image: "images/film14.jpg",
     },
     {
-        image: "Aflex/home page/images/film15.jpg",
+        image: "images/film15.jpg",
     },
     {
-        image: "Aflex/home page/images/film16.jpg",
+        image: "images/film16.jpg",
     },
 ];
 let cards_animation2                        = [
     {
-        image: "Aflex/home page/images/film32.jpg",
+        image: "images/film32.jpg",
     },
     {
-        image: "Aflex/home page/images/film31.jpg",
+        image: "images/film31.jpg",
     },
     {
-        image: "Aflex/home page/images/film29.jpg",
+        image: "images/film29.jpg",
     },
     {
-        image: "Aflex/home page/images/film28.jpg",
+        image: "images/film28.jpg",
     },
     {
-        image: "Aflex/home page/images/film27.jpg",
+        image: "images/film27.jpg",
     },
     {
-        image: "Aflex/home page/images/film26.jpg",
+        image: "images/film26.jpg",
     },
     {
-        image: "Aflex/home page/images/film25.jpg",
+        image: "images/film25.jpg",
     },
     {
-        image: "Aflex/home page/images/film24.jpg",
+        image: "images/film24.jpg",
     },
     {
-        image: "Aflex/home page/images/film23.jpg",
+        image: "images/film23.jpg",
     },
     {
-        image: "Aflex/home page/images/film22.jpg",
+        image: "images/film22.jpg",
     },
     {
-        image: "Aflex/home page/images/film21.jpg",
+        image: "images/film21.jpg",
     },
     {
-        image: "Aflex/home page/images/film20.jpg",
+        image: "images/film20.jpg",
     },
     {
-        image: "Aflex/home page/images/film19.jpg",
+        image: "images/film19.jpg",
     },
     {
-        image: "Aflex/home page/images/film18.jpg",
+        image: "images/film18.jpg",
     },
     {
-        image: "Aflex/home page/images/film17.jpg",
+        image: "images/film17.jpg",
     },
     {
-        image: "Aflex/home page/images/film4.jpg",
+        image: "images/film4.jpg",
     },
 ];
 let array_login                             =[];
