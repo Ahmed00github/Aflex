@@ -1,0 +1,258 @@
+/* variables */
+:root  {
+    --background-color:#222;
+    --sec-background-color:#111;
+    --color-txt:#ffff;
+    --color-wrong:red;
+}
+/* variables */
+/* ########################################################################### */
+/* global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+label {
+    color: var(--color-txt);
+    font-size: 1.5rem;
+}
+body {
+    background-color: var(--background-color);
+}
+/* global */
+/* ############################################################################ */
+/* header */
+#header {
+    width: 100%;
+    height: 70px;
+    padding: 25px;
+    font-size: 1.5rem;
+    background-color: var(--sec-background-color);
+    position: fixed;
+    color: var(--color-txt);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: -70px;
+}
+.logo h2 {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 2px;
+}
+.log-regi {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+    color: black;
+}
+.log {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid black;
+    cursor: pointer;
+}
+.log p {
+    color: var(--sec-background-color);
+}
+.regi {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 3px solid black;
+    cursor: pointer;
+    color: var(--sec-background-color);
+}
+.regi p {
+    color: var(--sec-background-color);
+}
+/* header */
+/* ############################################################################ */
+/* main section */
+#main_section {
+    width: 100%;
+    /* height: calc(100vh - 70px); */
+    margin-top: 70px;
+    background-color: var(--background-color);
+    padding: 25px;
+}
+.login-word {
+    width: 100%;
+    height: 60px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--color-txt);
+    margin-bottom: 15px;
+}
+.wong1 {
+    width: 100%;
+    height: 60px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--color-txt);
+    color: var(--color-wrong);
+}
+.parentOf_form {
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    margin-top: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    width: 850px;
+    height: 250px;
+    background-color: transparent;
+    /* background-color:blue; */
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+.cont-input {
+    width: 750px;
+    height: 40px;
+    background-color: transparent;
+    /* background-color: orange; */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+/* .inp-pass {
+    margin-top: 15px;
+} */
+#input-email {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.5rem;
+    color: var(--color-txt);
+    background-color: transparent;
+    outline: 2px solid red;
+    border: none;
+}
+/* #input-email:focus {
+    box-shadow: 0 2px 4px blue, 0 8px 16px blue;
+} */
+.bet-eye {
+    width: 90%;
+}
+#input-pass {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 15px;
+    font-size: 1.5rem;
+    color: var(--color-txt);
+    background-color: transparent;
+    border-left: 2px solid red;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    outline: none;
+}
+.eye {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-right: 2px solid red;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+    color: var(--color-txt);
+}
+.cont-Of-button{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+}
+.ptn-sign {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: var(--color-wrong);
+    margin-right: 5px;
+    cursor: pointer;
+}
+.cont-Of-button p {
+    margin-left:1.5px ;
+    font-size: 1.5rem;
+    color: var(--color-txt);
+}
+.link-signup {
+    text-decoration: underline;
+    color: var(--color-txt);
+    margin-left: 3px;
+}
+.wrong_pass {
+    /* background-color: blue; */
+    background-color: transparent;
+    color: var(--color-wrong);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+.wrong_email {
+    /* background-color: blue; */
+    background-color: transparent;
+    color: var(--color-wrong);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+/* main section */
+.contt {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-txt);
+    border: 1.5px solid var(--color-wrong);
+    border-radius: 8px;
+
+}
+/* ############################################################################ */
+.hidden {
+    display: none;
+}

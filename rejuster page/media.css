@@ -1,0 +1,43 @@
+@media (max-width:700px) {
+    p {
+        font-size: 1rem;
+    }
+}
+@media (max-width:550px) {
+    .wong1 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:430px) {
+    p {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width:315px) {
+    .wong1 {
+        font-size: 0.8rem;
+    }
+    .containter_to_middel_screen {
+        width: 400px;
+    }
+    .regi p {
+        font-size: 0.7rem;
+    }
+    .log p {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width:290px) {
+    .containter_to_middel_screen {
+        width: 200px;
+    }
+    .regi p {
+        font-size: 0.5rem;
+    }
+    label {
+        font-size: 1rem;
+    }
+}

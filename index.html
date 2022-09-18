@@ -1,0 +1,104 @@
+<!-- 
+<i class="fa-solid fa-eye"></i>
+<i class="fa-solid fa-eye-slash"></i>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log in</title>
+    <!--########################### meta ###########################-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--########################### css files ########################### -->
+    <link rel="stylesheet" href="login page/css.css">
+    <link rel="stylesheet" href="login page/media.css">
+    <!--########################### google fontes ###########################-->
+    <!-- font 1 "Indie Flower" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- font 2 "M PLUS 1p" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!--########################### font-awesome ###########################-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <!-- ##################################################################### -->
+    <!-- header -->
+    <section id="header">
+            <div class="logo">
+                <h2>Gomaa</h2>
+            </div>
+            <div class="log-regi">
+                <div class="log">
+                    <a href='index.html'><p>Login</p></a>
+                </div>
+                <div class="regi">
+                    <a href='rejuster page/create.html'><p>regsister</p></a>
+                </div>
+            </div>
+    </section>
+    <!-- header -->
+    <!-- ##################################################################### -->
+    <!-- main section -->
+    <section id="main_section">
+        <div class="login-word">
+            <h1>Log in</h1>
+        </div>
+        <div class="wong1">
+            <p>if you want to log in please fill this form</p>
+        </div>
+        <!-- ******************************************************************************************* -->
+        <div class="parentOf_form">
+            <div class="form">
+                <div class="inp-email">
+                    <label for="input-email">email</label>
+                    <br />
+                    <div class="cont-input">
+                        <input id="input-email" type="text" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="wrong_email hidden">
+                    <p>enter correct email<br>contain '@'<br>not contain space</p>
+                </div>
+                <!-- *************************************************** -->
+                <div class="inp-pass">
+                    <label for="input-pass">Password</label>
+                    <br />
+                    <div class="cont-input">
+                        <div class="bet-eye">
+                            <input id="input-pass" type="password" placeholder="Enter password">
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrong_pass hidden">
+                    <p>5 char or more</p>
+                </div>
+            </div>
+        </div>
+        <!-- ********************************************************************************************** -->
+        <div class="cont-Of-button">
+            <form action="home page/home.html" method="get">
+                <input type="submit" class="ptn-sign" value="Sign in">
+            </form> 
+            <p>if you dont have an account?<a href="rejuster page/create.html" class="link-signup">SignUP</a></p>
+        </div>
+        <div class="contt hidden">
+            <div>
+                <p>Wrong email or password !</p>
+            </div>
+        </div>
+    </section>
+    <!-- main section -->
+    <!-- ##################################################################### -->
+    <!-- js files -->
+    <script src="login page/js.js"></script>
+</body>
+</html>

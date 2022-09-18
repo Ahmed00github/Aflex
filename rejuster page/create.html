@@ -1,0 +1,132 @@
+<!-- 
+<i class="fa-solid fa-eye"></i>
+<i class="fa-solid fa-eye-slash"></i>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>rejuster</title>
+    <!--########################### meta ###########################-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--########################### css files ########################### -->
+    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="media.css">
+    <!--########################### google fontes ###########################-->
+    <!-- font 1 "Indie Flower" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- font 2 "M PLUS 1p" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!--########################### font-awesome ###########################-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <!-- ##################################################################### -->
+    <!-- header -->
+    <section id="header">
+            <div class="logo">
+                <h2>Gomaa</h2>
+            </div>
+            <div class="log-regi">
+                <div class="log">
+                    <a href='../index.html'><p>Login</p></a>
+                </div>
+                <div class="regi">
+                    <a href='create.html'><p>regsister</p></a>
+                </div>
+            </div>
+    </section>
+    <!-- header -->
+    <!-- ##################################################################### -->
+    <!-- main section -->
+    <section id="main_section">
+        <div class="login-word">
+            <h1>SignUP</h1>
+        </div>
+        <div class="wong1">
+            <p>if you want to sign up please fill this form</p>
+        </div>
+        <!-- ********************************************************************************************************************* -->
+        <div class="main_form">
+            <div class="containter_to_middel_screen">
+                <div class="inp_firstName">
+                    <label for="">First_Name <span style="color: red;">*</span></label>
+                    <br>
+                    <input class="inp-first" type="text" placeholder="Enter your first name">
+                </div>
+                <div class="wrongFirstName1 hidden">
+                    <p>This form is requerd and should be 3 char or more</p>
+                </div>
+                <!-- ***************************************************** -->
+                <div class="inp_lastName">
+                    <label for="">Last_Name <span style="color: red;">*</span></label>
+                    <br>
+                    <input class="inp-last" type="text" placeholder="Enter your last name">
+                </div>
+                <div class="wrongFirstName2 hidden">
+                    <p>This form is requerd and should be 3 char or more</p>
+                </div>
+                <!-- ***************************************************** -->
+                <div class="inp_email">
+                    <label for="">Email <span style="color: red;">*</span></label>
+                    <br>
+                    <input class="inp-email" type="text" placeholder="Enter your email">
+                </div>
+                <div class="wrongFirstName3 hidden">
+                    <p>This form is requerd</p>
+                </div>
+                <!-- ***************************************************** -->
+                <div class="inp_age">
+                    <label for="">Age</label>
+                    <br>
+                    <input class="inp-age" type="number" placeholder="Enter your age" >
+                </div>
+                <div class="wrongFirstName4 hidden">
+                    <p>This form is requerd</p>
+                </div>
+                <!-- ***************************************************** -->
+                <div class="inp_password">
+                    <label for="">Password <span style="color: red;">*</span></label>
+                    <br>
+                    <div class="pass_eye">
+                        <div class="pass">
+                            <input class="inp-password" type="password" placeholder="Enter your password">
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-eye" style="color:#fff ;"></i>
+                        </div>
+                    </div>
+                    <div class="wrongFirstName5 hidden">
+                        <p>This form is requerd and should be 5 char or more</p>
+                    </div>
+                    <!-- ******************************************************************************** -->
+                </div>
+                
+                <div class="create">
+                    <button class="ptn_create">Create</button>
+                    <div class="old_account hidden">
+                        <p>This email is already taken !</p>
+                    </div>
+                    <div class="new_account hidden">
+                        <p>Done <i class="fa-solid fa-check"></i></p>
+                    </div>
+                </div>
+                
+                
+                <!-- ***************************************************** -->
+            </div>
+        </div>
+        <!-- ********************************************************************************************************************* -->
+        
+    </section>
+    <!-- main section -->
+    
+    <!-- js files -->
+    <script src="create.js"></script>
+    </body>
+    </html>

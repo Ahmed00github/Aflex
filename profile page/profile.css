@@ -1,0 +1,354 @@
+/* variables */
+:root  {
+    --background-color:#222;
+    --sec-background-color:#111;
+    --color-txt:#ffff;
+    --color-wrong:red;
+    --color_done:green;
+}
+/* variables */
+/* ########################################################################### */
+/* global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+body {
+    background-color: var(--background-color);
+}
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: var(--color-txt);
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+li {
+    margin-left: 10px;
+}
+label {
+    color: var(--color-txt);
+    font-size: 1.5rem;
+}
+/* global */
+/* ############################################################################ */
+/* mainSection */
+.mainSection {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+}
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    padding: 35px;
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 65%;
+    height: 100%;
+    background-color: var(--sec-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 8px;
+}
+.image {
+    width: 100%;
+    height: 24.75%;
+    /* background-color: red; */
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.image img {
+    width: 100%;
+    height: 96%;
+}
+.profileImage {
+    width: 300px;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+.line {
+    width: 100%;
+    height: 0.5%;
+    /* background-color: blue; */
+}
+.info {
+    width: 100%;
+    height: 74.75%;
+    /* background-color: brown; */
+    border-radius: 8px;
+    padding: 20px;
+}
+.contForm {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+}
+.name {
+    width: 100%;
+    height: 100px;
+    /* background-color: green; */
+    padding: 15px;
+}
+.name input {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: var(--background-color);
+    color: var(--color-txt);
+    border-radius: 8px;
+}
+.ptn_changePass {
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ptn_changePass button,.ptn_finallyChange,.canselChange {
+    border: 3.5px solid var(--color-wrong);
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: var(--background-color);
+    color: var(--color-txt);
+    opacity: 0.7;
+    transition: all 0.5s;
+    margin-left: 10px;
+}
+.ptn_changePass button:hover {
+    opacity: 1;
+    transition: all 0.5s;
+}
+.canselChange:hover {
+    opacity: 1;
+    transition: all 0.5s;
+}
+.ptn_finallyChange:hover {
+    opacity: 1;
+    transition: all 0.5s;
+}
+.changePassword,.finallyChange {
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.changePassword {
+    margin-top: -70px;
+}
+.old {
+    width: 50%;
+    height: 80%;
+    /* background-color: #fff; */
+}
+.new {
+    width: 50%;
+    height: 80%;
+    /* background-color: black; */
+}
+.old input,.new input {
+    width: 98%;
+    height: 30px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: var(--background-color);
+    color: var(--color-txt);
+    border-radius: 8px;
+}
+.finallyChange {
+    display: flex;
+    flex-direction: row;
+}
+.done,.not_done {
+    border: 3.5px solid var(--color_done);
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: var(--background-color);
+    color: var(--color-txt);
+    transition: all 0.5s;
+    margin-left: 10px;
+}
+.not_done {
+    border: 3.5px solid var(--color-wrong);
+}
+.noAccount {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-txt);
+}
+.frame {
+    width: 550px;
+    height: 80px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 3.5px solid var(--color-wrong);
+}
+.frame::after {
+    content: '|';
+    animation-name: word;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: 1.5rem;
+}
+.contEye {
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.inppasswithEye {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eyeWithInppass {
+    width: 10%;
+    /* height: 40px; */
+    background-color: var(--sec-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-txt);
+}
+.fa-solid {
+    color: var(--color-txt);
+    cursor: pointer;
+}
+
+@keyframes word {
+    0% {
+        content: 'N|';
+    }
+    4% {
+        content: 'No|';
+    }
+    8%{
+        content: 'No |';
+    }
+    12%{
+        content: 'No A|';
+    }
+    16%{
+        content: 'No Ac|';
+    }
+    20%{
+        content: 'No Acc|';
+    }
+    24%{
+        content: 'No Acc|';
+    }
+    28%{
+        content: 'No Acco|';
+    }
+    32%{
+        content: 'No Accou|';
+    }
+    36%{
+        content: 'No Accoun|';
+    }
+    40%{
+        content: 'No Account|';
+    }
+    44%{
+        content: 'No Account |';
+    }
+    48%{
+        content: 'No Account l|';
+    }
+    52%{
+        content: 'No Account lo|';
+    }
+    56%{
+        content: 'No Account log|';
+    }
+    60%{
+        content: 'No Account log |';
+    }
+    64%{
+        content: 'No Account log i|';
+    }
+    68%{
+        content: 'No Account log in|';
+    }
+    72%{
+        content: 'No Account log in |';
+    }
+    76%{
+        content: 'No Account log in n|';
+    }
+    80%{
+        content: 'No Account log in no|';
+    }
+    84%{
+        content: 'No Account log in now|';
+    }
+    88%{
+        content: 'No Account log in now!|';
+    }
+    92%{
+        content: 'No Account log in now|';
+    }
+    96%{
+        content: 'No Account log in now|';
+    }
+    100%{
+        content: 'No Account log in now|';
+    }
+}
+/* mainSection */
+.hidden {
+    display: none;
+}

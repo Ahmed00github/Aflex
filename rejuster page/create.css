@@ -1,0 +1,279 @@
+/* variables */
+:root  {
+    --background-color:#222;
+    --sec-background-color:#111;
+    --color-txt:#ffff;
+    --color-wrong:red;
+    --color_done:green;
+}
+/* variables */
+/* ########################################################################### */
+/* global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+label {
+    color: var(--color-txt);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+/* global */
+/* ############################################################################ */
+/* header */
+#header {
+    width: 100%;
+    height: 70px;
+    padding: 25px;
+    font-size: 1.5rem;
+    background-color: var(--sec-background-color);
+    position: fixed;
+    color: var(--color-txt);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: -70px;
+}
+.logo h2 {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 2px;
+}
+.log-regi {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+    color: black;
+}
+.log {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid black;
+    cursor: pointer;
+}
+.log p {
+    color: var(--sec-background-color);
+}
+.regi {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 3px solid black;
+    cursor: pointer;
+    color: var(--sec-background-color);
+}
+.regi p {
+    color: var(--sec-background-color);
+}
+/* header */
+/* ############################################################################ */
+/* main section */
+#main_section {
+    width: 100%;
+    /* height: 150vh; */
+    margin-top: 70px;
+    background-color: var(--background-color);
+    padding: 25px;
+}
+.login-word {
+    width: 100%;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--color-txt);
+    margin-bottom: 20px;
+}
+.wong1 {
+    width: 100%;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--color-txt);
+    color: var(--color-wrong);
+}
+/* ************************************************************************************** */
+/* main forms */
+.main_form {
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    margin-top: 35px;
+}
+.containter_to_middel_screen {
+    /* background-color: wheat; */
+    background-color: transparent;
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* background-color: red; */
+    padding: 25px;
+}
+.inp_firstName,.inp_lastName,.inp_email,.inp_age,.inp_password {
+    margin-bottom:20px ;
+    width: 100%;
+    height: 80px;
+    /* background-color: green; */
+    padding: 10px;
+}
+.inp_firstName input,.inp_lastName input,.inp_email input,.inp_age input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: 1px solid var(--color-wrong);
+    border: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    color: var(--color-txt);
+    background-color: transparent;
+    margin-top: 10px;
+}
+.pass_eye {
+    width: 100%;
+    height: 40px;
+    /* background-color: blue; */
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.pass {
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    /* background-color: red; */
+}
+.pass input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 1px solid var(--color-wrong);
+    border-bottom: 1px solid var(--color-wrong);
+    border-top: 1px solid var(--color-wrong);
+    border-right: 2px solid var(--sec-background-color);
+    padding: 15px;
+    color: var(--color-txt);
+    font-size: 1.5rem;
+}
+.eye {
+    width: 10%;
+    height: 100%;
+    /* background-color: olivedrab; */
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: 1px solid var(--color-wrong);
+    border-bottom: 1px solid var(--color-wrong);
+    border-top: 1px solid var(--color-wrong);
+}
+.fa-solid {
+    cursor: pointer;
+}
+/* main forms */
+/* ********************************************************************************************************************** */
+.create {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    /* background-color: red;*/
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    margin-top: 55px;
+}
+.ptn_create {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: var(--color-wrong);
+    margin-right: 5px;
+    cursor: pointer;
+    color: var(--color-txt);
+}
+.old_account {
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-top: 1.5px solid var(--color-wrong);
+    border-left: 1.5px solid var(--color-wrong);
+    border-right: 1.5px solid var(--color-txt);
+    border-bottom: 1.5px solid var(--color-txt);
+    box-shadow: #fff 1px 1px 4px 0px, var(--color-wrong) 0px 1px 3px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-txt);
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+.new_account {
+    width: 80px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-top: 1.5px solid var(--color-wrong);
+    border-left: 1.5px solid var(--color-wrong);
+    border-right: 1.5px solid var(--color-txt);
+    border-bottom: 1.5px solid var(--color-txt);
+    box-shadow: #fff 1px 1px 4px 0px, var(--color-wrong) 0px 1px 3px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color_done);
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+/* *********************************************************************************************************************** */
+.wrongFirstName1,.wrongFirstName2,.wrongFirstName3,.wrongFirstName4,.wrongFirstName5 {
+    width: 100%;
+    color: var(--color-wrong);
+    padding-left: 10px;
+    font-size: 1.5rem;
+    margin-bottom:15px ;
+}
+
+/* ************************************************************************************************************************** */
+.hidden {
+    display: none;
+}

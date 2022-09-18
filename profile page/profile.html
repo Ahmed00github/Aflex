@@ -1,0 +1,105 @@
+<!-- 
+<i class="fa-solid fa-eye"></i>
+<i class="fa-solid fa-eye-slash"></i>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title class="pageTitle"></title>
+    <!--########################### meta ###########################-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--########################### css files ########################### -->
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="media.css">
+    <!--########################### google fontes ###########################-->
+    <!-- font 1 "Indie Flower" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- font 2 "M PLUS 1p" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!--########################### font-awesome ###########################-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <div class="mainSection">
+        <div class="mainContainer">
+            <div class="container">
+                <div class="image">
+                    <div class="profileImage">
+                        <img src="../home page/images/film12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="line"><hr></div>
+                <div class="info">
+                    <div class="contForm">
+                        <div class="name">
+                            <label for="name">Name</label><br>
+                            <input id="name" type="text" class="inp_name" readonly>
+                        </div>
+                        <div class="name">
+                            <label for="email">Email</label><br>
+                            <input id="email" type="text" class="inp_email" readonly>
+                        </div>
+                        <div class="name peranPassword">
+                            <label for="pass">Password</label><br>
+                            <input id="pass" type="password" class="inp_pass" readonly>
+                        </div>
+                        <div class="ptn_changePass">
+                            <button class="ptn_chan">change Password</button>
+                        </div>
+                        <div class="changePassword hidden">
+                            <div class="old">
+                                <label for="">old password</label>
+                                <br>
+                                <div class="contEye">
+                                    <div class="inppasswithEye">
+                                        <input type="password" class="inp_oldPass">
+                                    </div>
+                                    <div class="eyeWithInppass">
+                                        <i class="fa-solid fa-eye eye1"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="new">
+                                <label for="">new password</label>
+                                <br>
+                                <div class="contEye">
+                                    <div class="inppasswithEye">
+                                        <input type="password" class="inp_newPass">
+                                    </div>
+                                    <div class="eyeWithInppass">
+                                        <i class="fa-solid fa-eye eye2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="finallyChange hidden">
+                            <button class="ptn_finallyChange">Change</button>
+                            <button class="canselChange">cansel</button>
+                            <div class="done hidden">
+                                <p>done</p>
+                            </div>
+                            <div class="not_done hidden">
+                                <p>faild !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="noAccount">
+        <div class="frame">
+            <h1></h1>
+        </div>
+    </div>
+    <!-- js files -->
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+/* variables */
+:root  {
+    --background-color:#222;
+    --sec-background-color:#111;
+    --color-txt:#ffff;
+    --color-wrong:red;
+    --color_done:green;
+}
+/* variables */
+/* ########################################################################### */
+/* global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+body {
+    background-color: var(--background-color);
+}
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: var(--color-txt);
+}
+label {
+    color: var(--color-txt);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+li {
+    margin-left: 10px;
+}
+/* global */
+/* ############################################################################ */
+/* header */
+#header {
+    width: 100%;
+    height: 70px;
+    padding: 25px;
+    font-size: 1.5rem;
+    background-color: var(--sec-background-color);
+    position: fixed;
+    color: var(--color-txt);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: -70px;
+    z-index: 1  ;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.logo ul .active {
+    color: var(--color-wrong);
+}
+.logo li {
+    padding-left: 35px;
+    transition: all 0.3s;
+}
+.logo li:hover {
+    color: var(--color_done);
+    transition: all 0.3s;
+}
+.logo h2 {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 2px;
+}
+.some_links {
+    /* background-color: red; */
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.some_links .fa-brands {
+    padding-left: 15px;
+}
+.some_links .fa-solid {
+    padding-left: 15px;
+}
+.some_links li {
+    transition: all 0.3s;
+}
+.some_links li:hover{
+    color: var(--color-wrong);
+    transition: all 0.3s;
+}
+/* header */
+/* ############################################################################ */
+.main_sec {
+    width: 100%;
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border-bottom: 10px solid var(--sec-background-color);
+}
+.container {
+    width: 100%;
+    height: 100%;
+    /* background-color:greenyellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+}
+.imag {
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.card_film {
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+    margin: 15px;
+    margin-bottom: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+}
+.card_film .image {
+    width: 90%;
+    height: 90%;
+    border: 5.5px solid rgba(223, 223, 2, 0.774);
+    border-radius: 8px;
+}
+.card_film .image:hover {
+    border: 5.5px solid var(--color-wrong);
+}
+.image img {
+    width: 100%;
+    height: 100%;
+}
+.discrip {
+    width: 50%;
+    height: 100%;
+    /* background-color: green; */
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.title {
+    width: 300px;
+    height: 150px;
+    color: var(--color-txt);
+    font-size: 1.3rem;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.trend {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+}
+.half_line {
+    width: 30%;
+    height: 10%;
+    /* background-color: green;  */
+}
+.complete_line {
+    width: 100%;
+    height: 10%;
+}
+.description {
+    width: 100%;
+    /* background-color: red; */
+    margin-bottom: 150px;
+    padding: 35px;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    color: var(--color-txt);
+}
+/* ****************************************************************************************************************** */
+.sec_section {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    padding: 25px;
+}
+.container2 {
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filmVideo {
+    width: 100%;
+    height: 100%;
+}
+.noAccount {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-txt);
+}
+.frame {
+    width: 550px;
+    height: 80px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 3.5px solid var(--color-wrong);
+}
+.frame::after {
+    content: '|';
+    animation-name: word;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: 1.5rem;
+}
+@keyframes word {
+    0% {
+        content: 'N|';
+    }
+    4% {
+        content: 'No|';
+    }
+    8%{
+        content: 'No |';
+    }
+    12%{
+        content: 'No A|';
+    }
+    16%{
+        content: 'No Ac|';
+    }
+    20%{
+        content: 'No Acc|';
+    }
+    24%{
+        content: 'No Acc|';
+    }
+    28%{
+        content: 'No Acco|';
+    }
+    32%{
+        content: 'No Accou|';
+    }
+    36%{
+        content: 'No Accoun|';
+    }
+    40%{
+        content: 'No Account|';
+    }
+    44%{
+        content: 'No Account |';
+    }
+    48%{
+        content: 'No Account l|';
+    }
+    52%{
+        content: 'No Account lo|';
+    }
+    56%{
+        content: 'No Account log|';
+    }
+    60%{
+        content: 'No Account log |';
+    }
+    64%{
+        content: 'No Account log i|';
+    }
+    68%{
+        content: 'No Account log in|';
+    }
+    72%{
+        content: 'No Account log in |';
+    }
+    76%{
+        content: 'No Account log in n|';
+    }
+    80%{
+        content: 'No Account log in no|';
+    }
+    84%{
+        content: 'No Account log in now|';
+    }
+    88%{
+        content: 'No Account log in now!|';
+    }
+    92%{
+        content: 'No Account log in now|';
+    }
+    96%{
+        content: 'No Account log in now|';
+    }
+    100%{
+        content: 'No Account log in now|';
+    }
+}
+.hidden {
+    display: none;
+}
