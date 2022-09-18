@@ -11,31 +11,31 @@ let pageTitle                   = document.querySelector(".pageTitle");
 let noAccount                   = document.querySelector(".noAccount");
 let TendingFilms                = [
 {
-    image: "Aflex/home page/images/film11.jpg",
+    image: "/Aflex/home page/images/film11.jpg",
     name : "Bhaag milkha Bhaag"
 },
 {
-    image: "Aflex/home page/images/film12.jpg",
+    image: "/Aflex/home page/images/film12.jpg",
     name : "The resorl"
 },
 {
-    image: "Aflex/home page/images/film13.jpg",
+    image: "/Aflex/home page/images/film13.jpg",
     name : "Fall"
 },
 {
-    image: "Aflex/home page/images/film14.jpg",
+    image: "/Aflex/home page/images/film14.jpg",
     name : "3mohm"
 },
 {
-    image: "Aflex/home page/images/film15.jpg",
+    image: "/Aflex/home page/images/film15.jpg",
     name : "Lost city"
 },
 {
-    image: "Aflex/home page/images/film16.jpg",
+    image: "/Aflex/home page/images/film16.jpg",
     name : "Apo sdam"
 },
 {
-    image: "Aflex/home page/images/film17.jpg",
+    image: "/Aflex/home page/images/film17.jpg",
     name : "seoul vibe"
 },
 ];
