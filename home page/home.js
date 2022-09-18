@@ -117,7 +117,7 @@ let stars_cards                             = [
 ];
 let cards_animation                             =[
     {
-        image: "images/film1.jpg",
+        image: "Ahmed00github/Aflex/home page/images/film1.jpg",
     },
     {
         image: "images/film2.jpg",
